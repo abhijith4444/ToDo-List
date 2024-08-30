@@ -7,16 +7,19 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f );
+    /* background: linear-gradient(135deg, #153677, #4e085f ); */
     padding: 10px;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+
 }
 .todo{
     width: 100%;
     max-width: 540px;
-    background-color: white;
+    background-color: #ffff;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .todo h2{
     display: flex;
@@ -30,11 +33,13 @@
 .row{
     display: flex;
     align-items: center;
-    background: #d3d6d8;
+    /* background: #d3d6d8; */
     justify-content: space-between;
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 30px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
 }
 input{
     flex: 1;
@@ -44,6 +49,7 @@ input{
     padding: 10px;
     font-weight: 14px;
     font-size: 15px;
+    
 }
 button{
     border: none;
@@ -53,6 +59,13 @@ button{
     cursor: pointer;
     background: #ff5945;
     border-radius: 40px;
+    transition: width 0.3s ease;
+    width: 120px;  
+}
+button:hover{
+    
+    width: 150px;
+    box-shadow: 1px 0.5px 20px #3a52c8;
 }
 ul li{
     list-style:none;
@@ -60,6 +73,7 @@ ul li{
     user-select: none;
     cursor: pointer;
     position: relative;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 ul li::before{
     content: '';
