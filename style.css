@@ -96,7 +96,7 @@ ul li span:hover{
     background: #b1b2b3;
 }
 
-@media(max-width:380px){
+@media(max-width:391px){
     button{
         font-size: 12px ;
         width: 10px;
