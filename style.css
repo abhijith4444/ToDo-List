@@ -95,3 +95,13 @@ ul li span{
 ul li span:hover{
     background: #b1b2b3;
 }
+
+@media(max-width:380px){
+    button{
+        font-size: 12px ;
+        width: 10px;
+    }
+    input{
+        width: 90%;
+    }
+}
